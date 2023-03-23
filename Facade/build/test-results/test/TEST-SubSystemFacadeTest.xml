@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SubSystemFacadeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-23T04:25:16" hostname="monayo.local" time="16.688">
+  <properties/>
+  <testcase name="Facade Method A 동작 검증" classname="SubSystemFacadeTest" time="16.688"/>
+  <system-out><![CDATA[SubSystemFacade.methodA()
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
