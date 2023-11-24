@@ -17,7 +17,7 @@ public class Application {
             System.out.println("book.getName() = " + book.getName());
         }
         System.out.println();
-        
+
         //확장 for 사용
         for (Book book : bookShelf) {
             System.out.println("book.getName() = " + book.getName());
