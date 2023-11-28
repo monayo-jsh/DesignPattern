@@ -10,6 +10,9 @@ public class Application {
         makeHtml("listFactory", "listFactory.ListFactory");
         makeHtml("divFactory", "divFactory.DivFactory");
 
+        Factory factory = Factory.getFactory("divFactory.DivFactory");
+        Page page = factory.createNaverPage();
+        page.output("naver.html");
     }
 
     private static void makeHtml(String fileName, String className) {
