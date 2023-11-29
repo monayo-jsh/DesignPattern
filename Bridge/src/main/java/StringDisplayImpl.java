@@ -1,6 +1,4 @@
-package template.inter;
-
-public class StringDisplayImpl implements InterfaceDisplay {
+public class StringDisplayImpl extends DisplayImpl {
 
     private final String string;
     private final int width;
@@ -11,29 +9,28 @@ public class StringDisplayImpl implements InterfaceDisplay {
     }
 
     @Override
-    public void open() {
-        this.printLine();
-
+    public void rawOpen() {
+        printLine();
     }
 
     @Override
-    public void print() {
+    public void rawPrint() {
         System.out.printf("|%s|%n", string);
     }
 
     @Override
-    public void close() {
-        this.printLine();
+    public void rawClose() {
+        printLine();
     }
 
-    public void printLine() {
-        System.out.print("+");
+    private void printLine() {
 
+        System.out.print("+");
         for(int i=0; i<width; i++) {
             System.out.print("-");
         }
-
         System.out.println("+");
+
     }
-    
+
 }
