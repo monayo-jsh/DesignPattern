@@ -1,3 +1,5 @@
+package second;
+
 public class Book {
 
     private final String name;
@@ -7,7 +9,7 @@ public class Book {
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
 }
