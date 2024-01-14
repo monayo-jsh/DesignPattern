@@ -1,4 +1,4 @@
-package template.inter;
+package first.template.inter;
 
 public interface InterfaceDisplay {
 

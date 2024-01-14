@@ -1,8 +1,10 @@
-import template.abstr.AbstractDisplay;
-import template.abstr.CharDisplay;
-import template.abstr.StringDisplay;
-import template.inter.InterfaceDisplay;
-import template.inter.StringDisplayImpl;
+package first;
+
+import first.template.abstr.AbstractDisplay;
+import first.template.abstr.CharDisplay;
+import first.template.abstr.StringDisplay;
+import first.template.inter.InterfaceDisplay;
+import first.template.inter.StringDisplayImpl;
 
 public class Application {
 

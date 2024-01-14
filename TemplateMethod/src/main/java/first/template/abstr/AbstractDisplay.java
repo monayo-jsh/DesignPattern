@@ -1,4 +1,4 @@
-package template.abstr;
+package first.template.abstr;
 
 public abstract class AbstractDisplay {
 

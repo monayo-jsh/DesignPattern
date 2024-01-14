@@ -1,28 +1,28 @@
-package template.abstr;
+package first.template.inter;
 
-public class StringDisplay extends AbstractDisplay {
+public class StringDisplayImpl implements InterfaceDisplay {
 
     private final String string;
     private final int width;
 
-    public StringDisplay(String string) {
+    public StringDisplayImpl(String string) {
         this.string = string;
         this.width = string.length();
     }
 
     @Override
-    protected void open() {
+    public void open() {
         this.printLine();
 
     }
 
     @Override
-    protected void print() {
-        System.out.printf("|%s|\n", string);
+    public void print() {
+        System.out.printf("|%s|%n", string);
     }
 
     @Override
-    protected void close() {
+    public void close() {
         this.printLine();
     }
 
@@ -35,5 +35,5 @@ public class StringDisplay extends AbstractDisplay {
 
         System.out.println("+");
     }
-
+    
 }

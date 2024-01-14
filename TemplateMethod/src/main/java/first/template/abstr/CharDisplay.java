@@ -1,4 +1,4 @@
-package template.abstr;
+package first.template.abstr;
 
 public class CharDisplay extends AbstractDisplay {
 
