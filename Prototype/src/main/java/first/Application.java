@@ -1,4 +1,6 @@
-import framework.*;
+package first;
+
+import first.framework.*;
 
 public class Application {
 

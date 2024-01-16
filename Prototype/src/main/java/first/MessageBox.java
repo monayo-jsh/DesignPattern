@@ -1,15 +1,13 @@
-package framework;
+package first;
 
-public class CopyCreatorMessageBox implements CopyProduct {
+import first.framework.Product;
+
+public class MessageBox extends Product {
 
     private final char decoChar;
 
-    public CopyCreatorMessageBox(char decoChar) {
+    public MessageBox(char decoChar) {
         this.decoChar = decoChar;
-    }
-
-    public CopyCreatorMessageBox(CopyCreatorMessageBox copyCreatorMessageBox) {
-        this.decoChar = copyCreatorMessageBox.decoChar;
     }
 
     @Override
@@ -26,11 +24,6 @@ public class CopyCreatorMessageBox implements CopyProduct {
         for(int i=0; i<decoLen; i++) {
             System.out.print(this.decoChar);
         }
-    }
-
-    @Override
-    public CopyProduct createCopy() {
-        return new CopyCreatorMessageBox(this);
     }
 
 }
