@@ -1,7 +1,7 @@
-package idcard;
+package first.idcard;
 
-import framework.Factory;
-import framework.Product;
+import first.framework.Factory;
+import first.framework.Product;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

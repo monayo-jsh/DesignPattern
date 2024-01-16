@@ -1,6 +1,6 @@
-package idcard;
+package first.idcard;
 
-import framework.Product;
+import first.framework.Product;
 
 public class IDCard extends Product {
 

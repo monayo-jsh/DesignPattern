@@ -1,4 +1,4 @@
-package idcard;
+package first.idcard;
 
 public class Test {
 
