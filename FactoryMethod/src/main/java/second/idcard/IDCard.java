@@ -5,10 +5,12 @@ import second.framwork.Product;
 public class IDCard extends Product {
 
     private final String owner;
+    private final int serialNumber;
 
-    public IDCard(String owner) {
-        System.out.println(owner + "의 ID카드를 생성합니다.");
+    IDCard(String owner, int serialNumber) {
+        System.out.println(owner + "[" + serialNumber+ "]의 ID카드를 생성합니다.");
         this.owner = owner;
+        this.serialNumber = serialNumber;
     }
 
     @Override
@@ -18,10 +20,14 @@ public class IDCard extends Product {
 
     @Override
     public String toString() {
-        return String.format("[IDCard: %s]", owner);
+        return String.format("[IDCard: %s, SerialNumber: %d]", owner, serialNumber);
     }
 
     public String getOwner() {
         return owner;
+    }
+
+    public int getSerialNumber() {
+        return serialNumber;
     }
 }
