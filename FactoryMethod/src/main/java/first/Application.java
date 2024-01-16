@@ -1,6 +1,8 @@
-import framework.Factory;
-import framework.Product;
-import idcard.IDCardFactory;
+package first;
+
+import first.framework.Factory;
+import first.framework.Product;
+import first.idcard.IDCardFactory;
 
 public class Application {
 

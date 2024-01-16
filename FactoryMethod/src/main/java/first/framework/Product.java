@@ -1,4 +1,4 @@
-package framework;
+package first.framework;
 
 public abstract class Product {
 
