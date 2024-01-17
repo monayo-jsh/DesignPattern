@@ -1,4 +1,6 @@
-import framework.Product;
+package first;
+
+import first.framework.Product;
 
 public class UnderlinePen extends Product {
 
