@@ -1,5 +1,8 @@
 package second;
 
+import second.framework.CopyCreatorMessageBox;
+import second.framework.CopyManager;
+import second.framework.CopyProduct;
 import second.framework.Manager;
 import second.framework.Product;
 
@@ -25,6 +28,20 @@ public class Application {
 
         Product p3 = manager.create("slash box");
         p3.use("Hello, world");
+
+        // 원본 생성
+        CopyManager copyManager = new CopyManager();
+        copyManager.register("ampersand box", new CopyCreatorMessageBox('&'));
+        copyManager.register("percent box", new CopyCreatorMessageBox('%'));
+
+        // 복사해서 사용
+        CopyProduct p4 = copyManager.create("ampersand box");
+        p4.use("Hello, world.");
+
+        System.out.println();
+
+        CopyProduct p5 = copyManager.create("percent box");
+        p5.use("Hello, world.");
     }
 
 }
